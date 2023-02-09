@@ -1,0 +1,44 @@
+header {
+    background-color: rgb(40, 120, 177);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header > ul {
+    list-style: none;
+}
+
+
+a {
+    color: white;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(40, 120, 177);
+    
+}
+
+h1 {
+    color:white
+}
+
+table {
+    border: 1px solid;
+}
+
+td, th {
+    text-align: center;
+    padding:15px;
+}
+
+footer {
+    text-align: center;
+}
+
+input {
+    background-color: rgb(76, 110, 86);
+}
+
+button {
+   color: white;
+}

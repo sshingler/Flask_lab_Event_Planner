@@ -1,28 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Make a new event</h1>
+    <h1>List a new event:</h1>
 
     <form action="/events" method="post">
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date">
         
         <label for="event_name">Event name:</label>
         <input type="text" id="event_name" name="event_name">
 
-        <label for="number_of_guests">Number of guests:</label>
-        <input type="text" id="number_of_guests" name="number_of_guests">
+        <label for="number_of_guests">Maximum guests:</label>
+        <input type="number" id="number_of_guests" name="number_of_guests">
 
-        <label for="room_location">Room location:</label>
+        <label for="room_location">Location:</label>
         <input type="text" id="room_location" name="room_location">
 
         <label for="description">Description:</label>
         <input type="text" id="description" name="description">
 
-        
-
-
-
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
 
         <input type="submit" value="Add Event">
     </form>

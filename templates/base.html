@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - TechEvents</title>
 </head>
-<hr>
 <body>
-    <ul>
-        <li>
-            <a href="/events">Home</a>
-        </li>
-        <li>
-            <a href="/events/new">New Event</a>
-        </li>
-    </ul>
-    <hr>
+    <header>
+        <ul>
+            <li>
+             <a href="/events">Home</a>
+            </li>
+            <li>
+                <a href="/events/new">Add Event</a>
+            </li>
+        </ul>
+    </header>
     {% block content %}
 
     {% endblock %}
 </body>
-<hr>
 <footer>
-    &copy Testing 123
+    &copy Highland Events
 </footer>
-<hr>
 </html>
