@@ -13,6 +13,7 @@
         <th>Location</th>
         <th>Description</th>
         <th>Date</th>
+        <th> Recurring</th>
       </tr>
     </thead>
     <tbody>
@@ -24,9 +25,15 @@
         <td>{{ event.room_location }}</td>
         <td>{{ event.description }}</td>
         <td>{{ event.date.strftime("%d %b %Y") }}</td>
+        <td>{{event.recurring}}</td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
 </div>
 {% endblock %}
+
+
+{%if recurring %}
+        <span>&#9989</span>
+      {% endif %}
