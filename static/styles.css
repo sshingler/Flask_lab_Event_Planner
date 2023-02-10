@@ -13,6 +13,10 @@ a {
     color: white;
 }
 
+a:hover {
+    color: rgb(192, 185, 185);
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(40, 120, 177);
@@ -37,6 +41,6 @@ footer {
 }
 
 input {
-    background-color: rgb(76, 110, 86);
+    background-color: rgb(211, 194, 194);
 }
 
