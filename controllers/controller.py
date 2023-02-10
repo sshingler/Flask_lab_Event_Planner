@@ -1,6 +1,6 @@
 from flask import render_template, request, redirect
 from app import app
-from models.event_list import events_list, add_new_event
+from models.event_list import events_list, add_new_event, delete_event
 from models.event import *
 from datetime import datetime
 
@@ -24,8 +24,12 @@ def add_event():
     description = request.form['description']
     if request.form.get('recurring'):
         event_recurring = True
-    
     new_event = Event(formatted_date, event_name, number_of_guests, room_location, description, event_recurring)
-
     add_new_event(new_event)
+    return redirect("/events")
+
+@app.route("/events/delete/", methods=['POST'])
+def delete():
+    index_to_delete = int(request.form["delete"])
+    delete_event(index_to_delete)
     return redirect("/events")
